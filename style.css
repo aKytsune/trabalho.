@@ -1,2 +1,101 @@
-body{background-color: darkgray;}
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ------------------- CORES E FUNDOS ------------------- */
+
+/* MARSALA para Cabeçalho, Rodapé e Menu (classe dourado-bg) */
+.dourado-bg {
+    background-color: #b73d3d; /* Marsala (Tom profundo de vinho tinto) */
+    color: #ffffff; /* Texto claro no marsala */
+    padding: 15px 20px;
+    text-align: center;
+}
+
+
+.marrom-rosa-bg {
+    /* Define o fundo */
+    background-color: #191817; /* Marrom de base */
+    background-image: linear-gradient(135deg, #191817 50%, #191817 100%);
+    color: #ffffff; /* Texto claro no fundo escuro */
+    padding: 40px 20px;
+    min-height: 80vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* ------------------- LOGO ------------------- */
+
+.logo-container {
+    margin-bottom: 30px;
+    /* AJUSTE: Centraliza o título e o círculo */
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.logo-titulo {
+    /* NOVO: Estilo para a frase "Story Coffe" acima do círculo */
+    font-size: 2.5em; 
+    color: #ffffff; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    margin-bottom: 15px; 
+    letter-spacing: 5px; 
+}
+
+.logo-circulo {
+    width: 150px; /* Tamanho do círculo */
+    height: 150px;
+    border-radius: 50%; /* Faz o formato de círculo */
+    background-color: #ffffff; /* Fundo branco para destaque */
+    border: 5px solid #903040; /* Borda MARSALA */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    /* AJUSTE: Aumentei o tamanho da fonte para o texto interno (SC) */
+    font-size: 2.5em; 
+    color: #333;
+    font-weight: bold;
+}
+
+/* ------------------- MENU ------------------- */
+
+.menu-container {
+    display: flex;
+    gap: 15px; 
+    margin-top: 40px;
+    margin-bottom: 50px;
+    flex-wrap: wrap; 
+}
+
+.menu-item {
+    text-decoration: none; 
+    background-color: #903040; /* Retângulos são MARSALA */
+    color: #ffffff; /* Texto branco no marsala */
+    padding: 15px 25px;
+    width: 150px; 
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px; 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); 
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #a84758; /* Marsala mais claro ao passar o mouse */
+    transform: translateY(-3px); 
+}
+
+/* ------------------- RODAPÉ ------------------- */
+footer.dourado-bg {
+    font-size: 0.2em;
+}
 
