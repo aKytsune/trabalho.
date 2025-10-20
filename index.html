@@ -3,36 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Story Coffe</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>Cafeteria do Amor</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header class="dourado-bg">
+    <header>
+        <div class="logo">
+            <h1>Cafeteria do Amor</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Início</a></li>
+                <li><a href="#" onclick="showPage('historia')">História</a></li>
+                <li><a href="#" onclick="showPage('menu')">Menu</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="marrom-rosa-bg">
-        
-        <div class="logo-container">
-            <h1 class="logo-titulo">Story Coffe</h1>
-
-            <div class="logo-circulo">
-                SC
-            </div>
+    <main>
+        <div id="home" class="page active">
+            <h2>Bem-vindo à Cafeteria do Amor!</h2>
+            <p>O melhor café da cidade, preparado com amor.</p>
         </div>
 
-        <nav class="menu-container">
-            <a href="menu.html" class="menu-item">MENU</a>
-            <a href="3d.html" class="menu-item">3D</a>
-            <a href="historia.html" class="menu-item">HISTÓRIA</a>
-            <a href="orcamento.html" class="menu-item">ORÇAMENTO</a>
-        </nav>
+        <div id="historia" class="page">
+            <h2>Nossa História</h2>
+            <p>A Cafeteria do Amor nasceu de um sonho de oferecer mais do que café, mas uma experiência única de acolhimento.</p>
+        </div>
 
+        <div id="menu" class="page">
+            <h2>Nosso Menu</h2>
+            <ul>
+                <li>Café Expresso - R$5,00</li>
+                <li>Cappuccino - R$7,00</li>
+                <li>Latte - R$6,50</li>
+                <li>Bolo de Chocolate - R$8,00</li>
+            </ul>
+        </div>
     </main>
 
-    <footer class="dourado-bg">
-        Story Coffe
+    <footer>
+        <p>&copy; 2025 Cafeteria do Amor | Todos os direitos reservados.</p>
     </footer>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
